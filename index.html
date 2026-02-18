@@ -314,6 +314,59 @@
             margin-left: 0.5rem;
         }
 
+        .summer {
+            background: linear-gradient(135deg, #1a3a5c 0%, #0d2b45 100%);
+            color: var(--warm-white);
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .summer::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: radial-gradient(circle at 10% 20%, rgba(100, 200, 255, 0.05) 0%, transparent 50%),
+                              radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+        }
+
+        .summer .section-title {
+            color: #64c8ff;
+        }
+
+        .summer .section-title::after {
+            background: var(--gold);
+        }
+
+        .summer-intro {
+            font-size: 1.2rem;
+            opacity: 0.85;
+            margin-bottom: 2.5rem;
+            font-style: italic;
+        }
+
+        .summer-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .summer .excursion-card {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .summer .excursion-card:hover {
+            border-color: #64c8ff;
+        }
+
+        .summer .excursion-card h3 {
+            color: #64c8ff;
+            font-size: 1.4rem;
+        }
+
         .excursions {
             background: var(--deep-green);
             color: var(--warm-white);
@@ -492,7 +545,7 @@
             <div class="divider"></div>
             <p class="subtitle">Local Accommodation in Elvas</p>
             <p class="address">
-                <a href="https://maps.app.goo.gl/qJT14pshDuG9WmQv8" target="_blank" 
+                <a href="https://maps.app.goo.gl/qJT14pshDuG9WmQv8" target="_blank"
        style="color: white;">
         Avenida da Piedade, 58 - B, Elvas
                 </a>
@@ -504,9 +557,9 @@
     <div class="intro">
         <div class="container">
             <p class="intro-text">
-                <strong>Avenida</strong> is your home in Elvas, the most representative fortified city of the European bastion fortification school. 
-                Strategically located on Avenida da Piedade, we offer you privileged access to the <strong>UNESCO World Heritage Site</strong>, 
-                the largest aqueduct on the Iberian Peninsula, and authentic Alentejo cuisine. 
+                <strong>Avenida</strong> is your home in Elvas, the most representative fortified city of the European bastion fortification school.
+                Strategically located on Avenida da Piedade, we offer you privileged access to a <strong>UNESCO World Heritage Site</strong>,
+                the largest aqueduct on the Iberian Peninsula, and authentic Alentejo gastronomy.
                 Discover Elvas with the comfort of feeling right at home.
             </p>
         </div>
@@ -523,7 +576,7 @@
                 <div class="card-body">
                     <div class="establishment">
                         <p>Perfect for breakfast, just one block from Avenida.</p>
-                        <div class="highlight">Freshly baked pastries, excellent breakfast and the authentic Pastel de Nata (Belém)</div>
+                        <div class="highlight">Home-made pastries, excellent breakfast and the authentic Pastel de Nata (Belém)</div>
                         <a href="https://maps.app.goo.gl/qsu3bFemHW9hZP6h6" target="_blank">View location</a>
                     </div>
                 </div>
@@ -551,7 +604,7 @@
                 <div class="card-body">
                     <div class="establishment">
                         <p>A unique and unmissable speciality!</p>
-                        <div class="highlight">The only Sericaia baked in a wood-fired oven. Exclusive take-away — calling ahead is recommended</div>
+                        <div class="highlight">The only Sericaia baked in a wood-fired oven. Takeaway only – calling ahead is recommended</div>
                         <a href="https://maps.app.goo.gl/PhMYZ9bLaDFK55ZD8" target="_blank">View location</a>
                     </div>
                 </div>
@@ -612,7 +665,7 @@
                 <div class="card-body">
                     <div class="establishment">
                         <p>Monthly specials inspired by seasonal ingredients and the famous Neapolitan pizzerias.</p>
-                        <div class="highlight">Italian food in a quality restaurant</div>
+                        <div class="highlight">Italian cuisine in a quality restaurant</div>
                         <a href="https://maps.app.goo.gl/9Y2PNfJSx2SJSsok7" target="_blank">View location</a>
                     </div>
                 </div>
@@ -625,7 +678,7 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <p>Chef-driven restaurant with unique experiences, a charming terrace and contemporary décor.</p>
+                        <p>Chef's restaurant with unique experiences, an inviting terrace and contemporary décor.</p>
                         <div class="highlight">Sophisticated cuisine in a designer restaurant</div>
                         <a href="https://maps.app.goo.gl/ZirRh4D5CvKBKJzS8" target="_blank">View location</a>
                     </div>
@@ -652,11 +705,12 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <div class="highlight">Traditional Food at a Roadside Restaurant</div>
+                        <div class="highlight">Traditional food at a roadside restaurant</div>
                         <a href="https://maps.app.goo.gl/oCrcCCVyam6X6ZXr9" target="_blank">View location</a>
                     </div>
                 </div>
             </div>
+
         </div>
 
         <h2 class="section-title" style="margin-top: 5rem;">Around Elvas</h2>
@@ -694,7 +748,7 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <div class="highlight">Traditional Food in a Traditional Restaurant</div>
+                        <div class="highlight">Traditional food in a typical restaurant</div>
                         <a href="https://maps.app.goo.gl/ootVSLChSgTpC9TA7" target="_blank">View location</a>
                     </div>
                 </div>
@@ -707,7 +761,7 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <div class="highlight">Traditional Food in a Typical Tavern-Style Restaurant</div>
+                        <div class="highlight">Traditional food in a typical tavern-style restaurant</div>
                         <a href="https://maps.app.goo.gl/rpT2kUdJfz41usAx5" target="_blank">View location</a>
                     </div>
                 </div>  
@@ -730,7 +784,7 @@
                 <div class="excursion-card stagger-animation">
                     <h3>Marvão</h3>
                     <p class="distance">📍 77.3 km from Elvas</p>
-                    <p>Fortified border village with a castle, narrow streets and absolutely breathtaking views over the mountains and the frontier.</p>
+                    <p>Walled border town with a castle, narrow streets and absolutely breathtaking views over the mountains and frontier.</p>
                     <a href="https://goo.gl/maps/dFBbMRT32pqMB9po7" target="_blank" style="color: var(--gold);">View location →</a>
                 </div>
 
@@ -769,7 +823,7 @@
                 </div>
 
                 <div class="parking-item">
-                    <h4>Casa das Barcas Car Park</h4>
+                    <h4>Parque Casa das Barcas</h4>
                     <p>Access through the city walls to a large new car park</p>
                     <span class="tag">Free</span>
                     <span class="tag" style="background: var(--terracotta);">Recommended for large vehicles</span>
@@ -789,10 +843,10 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <p>A must-visit — explore the Castle and its surrounding streets. Don't miss the Elvas Plum Factory Museum.</p>
+                        <p>A must-visit — explore the Castle and its surrounding streets. Don't miss the Elvas Plum Factory Museum nearby.</p>
                         <a href="https://goo.gl/maps/pGN14FSZkz9rZH1M6" target="_blank">View Castle</a>
                         <br>
-                        <a href="https://goo.gl/maps/sZMxK5sf9gRnubAn6" target="_blank">View Plum Factory Museum</a>
+                        <a href="https://goo.gl/maps/sZMxK5sf9gRnubAn6" target="_blank">View Elvas Plum Factory Museum</a>
                     </div>
                 </div>
             </div>
@@ -805,7 +859,7 @@
                 <div class="card-body">
                     <div class="establishment">
                         <p>A unique system of bastion fortifications. We recommend a night-time drive around the city's ring road.</p>
-                        <div class="highlight">During the day, walk the moat area starting from the military museum</div>
+                        <div class="highlight">During the day, walk through the moat area starting from the military museum</div>
                         <a href="https://goo.gl/maps/aSNqL5NW8Jd6zjMg8" target="_blank">View location</a>
                     </div>
                 </div>
@@ -818,7 +872,7 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <div class="highlight">The largest aqueduct on the Iberian Peninsula, stretching 8.5 km, dating back to 1498</div>
+                        <div class="highlight">The largest aqueduct on the Iberian Peninsula, stretching 8.5 km and dating back to 1498</div>
                         <a href="https://goo.gl/maps/qxJF5qeC4oUBUTBA6" target="_blank">View location</a>
                     </div>
                 </div>
@@ -844,9 +898,64 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <p>Located in Praça da República, the ideal starting point for information about Elvas and the surrounding region.</p>
+                        <p>Located on Praça da República, ideal for collecting information about Elvas and the surrounding region.</p>
                         <a href="https://goo.gl/maps/1mmQAauJNFjGkJMW7" target="_blank">View location</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="summer">
+        <div class="container">
+            <h2 class="section-title">☀️ If the Weather Allows...</h2>
+            <p class="summer-intro">On hot summer days, cool off at the swimming pools and river beaches in the region.</p>
+
+            <h3 class="summer-subtitle">In Elvas</h3>
+            <div class="grid">
+                <div class="excursion-card stagger-animation">
+                    <h3>🏊 Elvas Municipal Swimming Pools</h3>
+                    <p class="distance">Public – Outdoor and indoor pools depending on the time of year</p>
+                    <a href="https://goo.gl/maps/SQJMWpSPTKCFykL2A" target="_blank" style="color: var(--gold);">View location →</a>
+                </div>
+
+                <div class="excursion-card stagger-animation">
+                    <h3>🏊 José Vicente Abreu Pool</h3>
+                    <p class="distance">Clube Elvense de Natação – Outdoor pool depending on the time of year</p>
+                    <a href="https://goo.gl/maps/xbz2eMpbwhA5wTP47" target="_blank" style="color: var(--gold);">View location →</a>
+                </div>
+
+                <div class="excursion-card stagger-animation">
+                    <h3>🏊 Elxadai Swimming Pools</h3>
+                    <p class="distance">Hotel facility – Outdoor pool depending on the time of year</p>
+                    <a href="https://goo.gl/maps/TCJM3XP3RshGmFy29" target="_blank" style="color: var(--gold);">View location →</a>
+                </div>
+            </div>
+
+            <h3 class="summer-subtitle" style="margin-top: 3rem;">In the Region</h3>
+            <div class="grid">
+                <div class="excursion-card stagger-animation">
+                    <h3>🏖️ Azenhas d'El Rei River Beach</h3>
+                    <p class="distance">📍 52.7 km from Avenida · Alandroal</p>
+                    <a href="https://goo.gl/maps/BNfq9G3JqFdMZZUZ6" target="_blank" style="color: var(--gold);">View location →</a>
+                </div>
+
+                <div class="excursion-card stagger-animation">
+                    <h3>🌊 La Codosera Natural Pools</h3>
+                    <p class="distance">📍 55.3 km from Avenida · Spain</p>
+                    <a href="https://goo.gl/maps/1ge4KtgAjAZPuCDWA" target="_blank" style="color: var(--gold);">View location →</a>
+                </div>
+
+                <div class="excursion-card stagger-animation">
+                    <h3>🏖️ Monsaraz River Beach</h3>
+                    <p class="distance">📍 71.2 km from Avenida</p>
+                    <a href="https://goo.gl/maps/uH5XVZ2C2QZ6MREs9" target="_blank" style="color: var(--gold);">View location →</a>
+                </div>
+
+                <div class="excursion-card stagger-animation">
+                    <h3>🎢 AquaBadajoz Water Park</h3>
+                    <p class="distance">📍 14.7 km from Avenida · Badajoz, Spain</p>
+                    <a href="https://g.page/AQUABadajoz?share" target="_blank" style="color: var(--gold);">View location →</a>
                 </div>
             </div>
         </div>
